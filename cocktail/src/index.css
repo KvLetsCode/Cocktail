@@ -2,6 +2,11 @@
 
 @import "tailwindcss";
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
     font-family: "Modern Negra";
     src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
@@ -297,7 +302,7 @@ body {
             @apply flex flex-col justify-between items-center container mx-auto relative;
 
             .arrows {
-                @apply flex items-center justify-between w-full absolute;
+                @apply flex items-center justify-between w-full absolute pl-20;
 
                 button {
                     @apply text-white hover:text-yellow cursor-pointer transition-colors max-w-36;
@@ -318,10 +323,10 @@ body {
         }
 
         .recipe {
-            @apply flex max-md:flex-col gap-10 md:items-center justify-between w-full lg:absolute bottom-0;
+            @apply flex max-md:flex-col gap-10 md:items-center justify-between w-full lg:absolute bottom-0 ;
 
             .info {
-                @apply space-y-4 lg:translate-y-20;
+                @apply space-y-4 lg:translate-y-20 ml-10 mb-[4rem] ml-[8rem];
 
                 #title {
                     @apply font-modern-negra md:text-6xl text-3xl text-yellow max-w-40;
